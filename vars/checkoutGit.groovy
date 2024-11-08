@@ -3,6 +3,7 @@ def call(String gitUrl, String gitBranch) {
        $class: 'GitSCM',
        branches: [[name: gitBranch]],
        userRemoteConfigs: [[name: gitUrl]]
+    ])
 
 }
 
