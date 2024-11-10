@@ -1,6 +1,6 @@
 def call(String sonar){
-  withSonarQubeEnv(sonar){
-    sh '''$sonar/bin/sonar -Dsonar.projectName youtube -Dsonar.projectKey youtube'''
+  withSonarQubeEnv('sonar-server'){
+    sh '''$sonar/bin/sonar-scanner -Dsonar.projectName youtube -Dsonar.projectKey youtube'''
   }
 
 }
