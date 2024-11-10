@@ -1,4 +1,4 @@
 def call(){
-trivy.fs . > trivy.txt
+sh 'trivy.fs . > trivy.txt'
 
 }
