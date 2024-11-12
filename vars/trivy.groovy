@@ -1,4 +1,4 @@
 def call(){
-sh 'trivy fs . > trivy.txt'
+sh 'trivy fs . --skip-db-update > trivy.txt'
 
 }
